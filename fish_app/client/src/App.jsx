@@ -16,9 +16,9 @@ function App() {
     <BrowserRouter>
       <Toaster position="top-right" />
       <Routes path="/">
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/*" element={<Login />}></Route>
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/*" element={<Home />} />
+        <Route path="/home/*" element={<Home />} />
         <Route path="/admin/*" element={<AdminPage/>}/>
       </Routes>
     </BrowserRouter>

@@ -34,7 +34,7 @@ export function Login() {
     }
     if (customer == email) {
       toast.success("Login Successfully");
-      navigation("/");
+      navigation("/home");
     } else {
       toast.error("User not Found");
     }
